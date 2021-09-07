@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+ dock1:
+  build: ./dock1
+  ports:
+   - "3000:80"
+ dock2:
+  build: ./dock2
+  ports:
+   - "3001:80"
+ dock3:
+  build: ./dock3
+  ports:
+   - "3002:80"
+ dock4:
+  build: ./dock4
+  ports:
+   - "3003:80"
+ dock5:
+  build: ./dock5
+  ports:
+   - "3004:80"
+ nginxcontainer:
+  build: ./nginxcontainer
+  ports:
+   - "8080:8080"
+  tty: true
